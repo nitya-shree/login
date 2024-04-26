@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Student Database</h1>
+    <nav>
+        <form id="searchForm">
+            <input type="text" id="searchName" placeholder="Enter student name" required>
+            <button type="submit">Fetch Marks</button>
+        </form>
+    </nav>
+
+    <div id="searchResults"></div>
+    
+    <h2>Add Student</h2>
+    <form id="addStudentForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="marks" placeholder="Marks" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Students List</h2>
+    <ul id="studentsList"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
